@@ -1,0 +1,24 @@
+.vote-basket {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+  }
+  
+  .basket {
+    text-align: center;
+  }
+  
+  .balls-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .ball {
+    width: 20px;
+    height: 20px;
+    background-color: #3498db;
+    border-radius: 50%;
+    margin: 5px;
+  }
+  

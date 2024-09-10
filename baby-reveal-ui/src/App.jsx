@@ -1,35 +1,21 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+
 import './App.css'
+import CountdownTimer from './CountdownTimer';
+import Voting from './Voting';
+import { Container, Header, Progress } from 'semantic-ui-react'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const targetDate = '2024-10-06T00:00:00';
+  const targetDateProgress = 40;
 
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    <Container fluid className="App">
+      <CountdownTimer targetDate={targetDate} />
+      <Progress percent={targetDateProgress} color='yellow' indicating />
+      <div style={{height: '80px'}}></div>
+      <Voting />
+    </Container>
+  );
 }
 
-export default App
+export default App;

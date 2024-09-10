@@ -1,10 +1,28 @@
-#root {
-  max-width: 1280px;
+.app-container {
   margin: 0 auto;
+  max-width: 100vw;
+  background-color: #f1e2d3;
+  height: 100vh;
+}
+.App {
+  max-width: 1280px;
+  margin: auto;
   padding: 2rem;
   text-align: center;
-  background: rgb(255,255,255);
-  background: linear-gradient(0deg, rgba(253,187,45,1) 0%, rgba(255,255,255,1) 100%,);
+  /*background: rgb(255,255,255);*/
+  /*background: linear-gradient(0deg, rgba(253,187,45,1) 0%, rgba(255,255,255,1) 100%,);*/
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  min-width: 320px;
+  align-self: center;
+  overflow: hidden;
+  z-index: 5;
+  position: relative;
+}
+
+#root {
+  margin: auto;
 }
 
 .logo {

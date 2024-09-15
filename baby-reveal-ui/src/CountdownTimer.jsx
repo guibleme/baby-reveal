@@ -34,7 +34,7 @@ const CountdownTimer = ({ targetDate }) => {
 
   return (
     <div>
-      <h1>{t('reveals_in')}</h1>
+      <h2>{t('reveals_in')}</h2>
       <div>
         {Object.keys(timeLeft).map((interval) => (
            <Statistic key={interval} color='yellow'>

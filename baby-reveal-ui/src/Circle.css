@@ -1,5 +1,6 @@
 /* src/Circle.css */
 .circle {
+    opacity: 0.8;
     position: absolute;
     top: -50px; /* Start above the viewport */
     width: 50px;

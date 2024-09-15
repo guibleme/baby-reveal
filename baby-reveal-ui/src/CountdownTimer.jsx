@@ -2,8 +2,10 @@ import React, { useState, useEffect } from 'react';
 import { Segment } from 'semantic-ui-react'
 import { StatisticValue, StatisticLabel, Statistic } from 'semantic-ui-react'
 
+import { useTranslation } from 'react-i18next';
 
 const CountdownTimer = ({ targetDate }) => {
+  const { t } = useTranslation();
   const calculateTimeLeft = () => {
     const difference = +new Date(targetDate) - +new Date();
     let timeLeft = {};
@@ -32,12 +34,12 @@ const CountdownTimer = ({ targetDate }) => {
 
   return (
     <div>
-      <h1>Reveals in</h1>
+      <h1>{t('reveals_in')}</h1>
       <div>
         {Object.keys(timeLeft).map((interval) => (
            <Statistic key={interval} color='yellow'>
             <StatisticValue>{timeLeft[interval]}</StatisticValue>
-            <StatisticLabel>{interval}</StatisticLabel>
+            <StatisticLabel>{t(interval)}</StatisticLabel>
           </Statistic>
         ))}
       </div>

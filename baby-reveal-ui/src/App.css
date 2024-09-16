@@ -2,14 +2,14 @@
   margin: 0 auto;
   max-width: 100vw;
   background-color: #f1e2d3;
-  height: 100vh;
-  overflow: hidden;
+  height: 100%;
 }
 .App {
   max-width: 1280px;
   margin: auto;
   padding: 2rem;
   text-align: center;
+  height: 100vh;
   /*background: rgb(255,255,255);*/
   /*background: linear-gradient(0deg, rgba(253,187,45,1) 0%, rgba(255,255,255,1) 100%,);*/
   align-self: center;
@@ -17,13 +17,13 @@
   flex-direction: column;
   min-width: 320px;
   align-self: center;
-  overflow: hidden;
   z-index: 5;
   position: relative;
 }
 
 #root {
   margin: auto;
+  background-color: #f1e2d3;
 }
 
 .logo {
@@ -60,4 +60,10 @@
 
 .read-the-docs {
   color: #888;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }

@@ -40,7 +40,7 @@ function App() {
             <div className='footer'>
                 <img style={{
                     right: '-10rem',
-                    width: '48rem',
+                    width: '30vh',
                     position: 'absolute',
                     bottom: '0',
                     zIndex: '2',
@@ -49,16 +49,16 @@ function App() {
                 }} src={cloudBlue} alt="Blue cloud"/>
                 <img style={{
                     left: '-10rem',
-                    width: '48rem',
+                    width: '30vh',
                     position: 'absolute',
                     bottom: '0',
                     zIndex: '2',
                     transform: 'scale(-1, 1)',
                     objectFit: 'cover',
                 }} src={cloudPink} alt="Pink cloud"/>
-                <img style={{right: '-4rem', width: '24rem', position: "absolute", bottom: '0', zIndex: 3}}
+                <img style={{right: '-4rem', width: '20vh', position: "absolute", bottom: '0', zIndex: 3}}
                      src={bearBlue} alt="Blue bear"/>
-                <img style={{left: '-7rem', width: '28rem', position: "absolute", bottom: '0', zIndex: 23}}
+                <img style={{left: '-7rem', width: '20vh', position: "absolute", bottom: '0', zIndex: 23}}
                      src={bearPink}
                      alt="Pink bear"/>
             </div>

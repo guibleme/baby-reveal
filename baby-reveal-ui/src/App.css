@@ -10,13 +10,10 @@
   padding: 2rem;
   text-align: center;
   height: 100vh;
-  /*background: rgb(255,255,255);*/
-  /*background: linear-gradient(0deg, rgba(253,187,45,1) 0%, rgba(255,255,255,1) 100%,);*/
   align-self: center;
   display: flex;
   flex-direction: column;
   min-width: 320px;
-  align-self: center;
   z-index: 5;
   position: relative;
 }

@@ -3,11 +3,6 @@ import React from 'react';
 import Circle from './Circle';
 import ballon1 from './assets/balao_rosa.png'; // Import your SVG file
 import balloon2 from './assets/balao_azul.png'; // Import your SVG file
-import cloudFooter from './assets/cloud.svg'; // Import your SVG file
-import bearBlue from './assets/bear-blue.png'; // Import your SVG file
-import bearPink from './assets/bear-pink.png'; // Import your SVG file
-import cloudBlue from './assets/balloon-blue.png'; // Import your SVG file
-import cloudPink from './assets/balloon-pink.png'; // Import your SVG file
 
 const Background = () => {
     const circles = Array.from({length: 5}).map((_, index) => {

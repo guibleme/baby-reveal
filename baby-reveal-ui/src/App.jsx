@@ -7,8 +7,8 @@ import Voting from './Voting';
 import Background from "./Background.jsx";
 
 import headerImage from './assets/header.png';
-import cloudBlue from "./assets/balloon-blue.png";
-import cloudPink from "./assets/balloon-pink.png";
+import cloudBlue from "./assets/blue-cloud.png";
+import cloudPink from "./assets/pink-cloud.png";
 import bearBlue from "./assets/bear-blue.png";
 import bearPink from "./assets/bear-pink.png"; // Import your SVG file
 

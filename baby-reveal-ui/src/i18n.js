@@ -25,13 +25,13 @@ const resources = {
             "hours": "hours",
             "minutes": "minutes",
             "seconds": "seconds",
-            "reveals_in": "Reveals in"
+            "reveals_in": "in"
         }
     },
     pt: {
         translation: {
             "vote_for": "Vote em menino ou menina",
-            "people_voted": "pessoas ja votaram!",
+            "people_voted": "pessoas já votaram!",
             "your_name": "Seu nome",
             "enter_name": "Digite seu nome",
             "message_to_baby": "Uma mensagem para o bebê (opcional)",
@@ -47,7 +47,7 @@ const resources = {
             "hours": "horas",
             "minutes": "minutos",
             "seconds": "segundos",
-            "reveals_in": "Revela em"
+            "reveals_in": "em"
         }
     }
 };

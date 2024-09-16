@@ -1,13 +1,13 @@
-import React, { useEffect, useState } from 'react';
-import { Button, Form, Icon, Input, Label, TextArea, FormField } from 'semantic-ui-react';
-import { db } from './firebase';
-import { addDoc, collection, getDocs, query, Timestamp, where } from 'firebase/firestore';
+import React, {useEffect, useState} from 'react';
+import {Button, Form, FormField, Header, HeaderSubheader, Icon, Input, Label, TextArea} from 'semantic-ui-react';
+import {db} from './firebase';
+import {addDoc, collection, getDocs, query, Timestamp, where} from 'firebase/firestore';
 import ReCAPTCHA from "react-google-recaptcha";
-import { useTranslation } from 'react-i18next';
+import {useTranslation} from 'react-i18next';
 
 const Voting = () => {
-    const { t } = useTranslation();
-    const [votes, setVotes] = useState({ boy: 0, girl: 0 });
+    const {t} = useTranslation();
+    const [votes, setVotes] = useState({boy: 0, girl: 0});
     const [name, setName] = useState('');
     const [message, setMessage] = useState('');
     const [totalVotes, setTotalVotes] = useState(0);
@@ -25,7 +25,7 @@ const Voting = () => {
                 const boyCount = boySnapshot.size;
                 const girlCount = girlSnapshot.size;
 
-                setVotes({ boy: boyCount, girl: girlCount });
+                setVotes({boy: boyCount, girl: girlCount});
                 setTotalVotes(boyCount + girlCount);
             } catch (e) {
                 console.error(t('error_fetching_votes'), e);
@@ -66,15 +66,21 @@ const Voting = () => {
     };
 
     return (
-        <div style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
-            <h2>{t('vote_for')} ({totalVotes} {t('people_voted')})</h2>
+        <div style={{display: 'flex', flexDirection: 'column', gap: '20px'}}>
+
+            <Header as='h2' icon>
+                {t('vote_for')}
+                <HeaderSubheader>
+                    <b>{totalVotes}</b> {t('people_voted')}
+                </HeaderSubheader>
+            </Header>
             <ReCAPTCHA
-                style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}
+                style={{display: 'flex', alignItems: 'center', justifyContent: 'center'}}
                 sitekey='6LfHpz0qAAAAAKwfnDX7KzbeNUMVMBvpU1qh6Ym-'
                 onChange={val => setCapVal(val)}
             />
             <Form>
-                <FormField required style={{ marginBottom: '10px' }}>
+                <FormField required style={{marginBottom: '10px'}}>
                     <label>{t('your_name')}</label>
                     <Input
                         size='large'
@@ -85,13 +91,13 @@ const Voting = () => {
                     />
                 </FormField>
 
-                <FormField style={{ marginBottom: '10px' }}>
+                <FormField style={{marginBottom: '10px'}}>
                     <label>{t('message_to_baby')}</label>
                     <TextArea
                         placeholder={t('leave_message')}
                         value={message}
                         onChange={(e) => setMessage(e.target.value)}
-                        style={{ width: '100%' }}
+                        style={{width: '100%'}}
                     />
                 </FormField>
             </Form>
@@ -100,7 +106,7 @@ const Voting = () => {
                         size='large' labelPosition='right' onClick={() => handleVote('boy')}
                         disabled={!capVal}>
                     <Button color='blue' disabled={!capVal}>
-                        <Icon name='heart' />
+                        <Icon name='heart'/>
                         {t('boy')}
                     </Button>
                     <Label as='a' basic color='blue' pointing='left'>
@@ -112,7 +118,7 @@ const Voting = () => {
                         size='large' labelPosition='right' onClick={() => handleVote('girl')}
                         disabled={!capVal}>
                     <Button color='pink' disabled={!capVal}>
-                        <Icon name='heart' />
+                        <Icon name='heart'/>
                         {t('girl')}
                     </Button>
                     <Label as='a' basic color='pink' pointing='left'>

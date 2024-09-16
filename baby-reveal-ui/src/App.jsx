@@ -39,28 +39,24 @@ function App() {
             </div>
             <div className='footer'>
                 <img style={{
-                    right: '-24rem',
-                    width: '78rem',
-                    height: '44rem',
+                    right: '-10rem',
+                    width: '48rem',
                     position: 'absolute',
-                    bottom: '-27rem',
+                    bottom: '0',
                     zIndex: '2',
                     transform: 'scale(-1, 1)',
                     objectFit: 'cover',
-                    clipPath: 'inset(0px 0 378px 0px)'
                 }} src={cloudBlue} alt="Blue cloud"/>
                 <img style={{
-                    left: '-22rem',
-                    width: '78rem',
-                    height: 'auto',
+                    left: '-10rem',
+                    width: '48rem',
                     position: 'absolute',
-                    bottom: '-13rem',
+                    bottom: '0',
                     zIndex: '2',
                     transform: 'scale(-1, 1)',
                     objectFit: 'cover',
-                    clipPath: 'inset(0px 0 182px 0px)'
                 }} src={cloudPink} alt="Pink cloud"/>
-                <img style={{right: '-4rem', width: '24rem', position: "absolute", bottom: '2rem', zIndex: 3}}
+                <img style={{right: '-4rem', width: '24rem', position: "absolute", bottom: '0', zIndex: 3}}
                      src={bearBlue} alt="Blue bear"/>
                 <img style={{left: '-7rem', width: '28rem', position: "absolute", bottom: '0', zIndex: 23}}
                      src={bearPink}

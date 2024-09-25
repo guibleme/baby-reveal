@@ -1,6 +1,7 @@
 // src/firebase.js
 import { initializeApp } from "firebase/app";
 import { getFirestore } from "firebase/firestore";
+import { getAppCheck, ReCaptchaV3Provider } from "firebase/app-check";
 
 const firebaseConfig = {
     apiKey: "AIzaSyArsSt8NR2PJTScT12iIridl-BcRtJfsS0",
@@ -14,6 +15,11 @@ const firebaseConfig = {
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
+
+// // Initialize App Check
+// const appCheck = getAppCheck(app);
+// appCheck.activate('your-public-site-key', true); // Replace 'your-public-site-key' with your actual reCAPTCHA v3 site key
+//
 
 // Initialize Firestore
 const db = getFirestore(app);

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import './App.css';
 import CountdownTimer from './CountdownTimer';
@@ -26,8 +26,14 @@ function App() {
         i18n.changeLanguage(lng);
     };
 
+    const [theme, setTheme] = useState('default');
+
+    const handleReveal = () => {
+        setTheme('pink');
+    };
+
     return (
-        <div className="app-container">
+        <div className={`app-container ${theme}`}>
             <div className="App">
                 <div style={{ display: 'flex', justifyContent: 'flex-end', padding: '10px' }}>
                     <Button basic color='red' onClick={() => changeLanguage('en')}>🇨🇦</Button>
@@ -39,7 +45,7 @@ function App() {
                 }} />
                 <CountdownTimer targetDate={targetDate} />
                 <div style={{ height: '80px' }}></div>
-                <Voting />
+                <Voting onReveal={handleReveal} />
             </div>
             <div className='footer'>
                 <img style={{

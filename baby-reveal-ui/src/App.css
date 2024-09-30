@@ -64,3 +64,11 @@
   bottom: 0;
   width: 100%;
 }
+
+.app-container.default {
+  background-color: #f1e2d3;
+}
+
+.app-container.pink {
+  background-color: #f574b5;
+}

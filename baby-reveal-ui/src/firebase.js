@@ -1,7 +1,7 @@
 // src/firebase.js
 import { initializeApp } from "firebase/app";
 import { getFirestore } from "firebase/firestore";
-import { getAppCheck, ReCaptchaV3Provider } from "firebase/app-check";
+// import { getAppCheck, ReCaptchaV3Provider } from "firebase/app-check";
 
 const firebaseConfig = {
     apiKey: "AIzaSyArsSt8NR2PJTScT12iIridl-BcRtJfsS0",

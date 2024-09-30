@@ -9,7 +9,7 @@ const resources = {
     en: {
         translation: {
             "vote_for": "Vote for boy or girl",
-            "people_voted": "people already voted!",
+            "people_voted": "people left their message already!",
             "your_name": "Your Name",
             "enter_name": "Enter your name",
             "message_to_baby": "A message to the baby (optional)",
@@ -25,13 +25,18 @@ const resources = {
             "hours": "hours",
             "minutes": "minutes",
             "seconds": "seconds",
-            "reveals_in": "in"
+            "reveals_in": "in",
+            "select_gender": "Please select the gender",
+            "submit_vote": "Submit Vote",
+            "revealed_gender": "Its a baby girl 🎀",
+            "click_reveal": "Click to reveal",
+            "revealed_button": "🎀"
         }
     },
     pt: {
         translation: {
             "vote_for": "Vote em menino ou menina",
-            "people_voted": "pessoas já votaram!",
+            "people_voted": "pessoas já deixaram sua mensagem!",
             "your_name": "Seu nome",
             "enter_name": "Digite seu nome",
             "message_to_baby": "Uma mensagem para o bebê (opcional)",
@@ -47,7 +52,12 @@ const resources = {
             "hours": "horas",
             "minutes": "minutos",
             "seconds": "segundos",
-            "reveals_in": "em"
+            "reveals_in": "em",
+            "submit_vote": "Submeter voto",
+            "select_gender": "Por favor selecione o gênero",
+            "revealed_gender": "É uma menininha 🎀",
+            "click_reveal": "Clique para revelar",
+            "revealed_button": "🎀"
         }
     }
 };
